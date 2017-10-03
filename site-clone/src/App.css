@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif:400,400i|Kaushan+Script|Montserrat:400,700');
+
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  background-image: url('./header-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 75vh;
+  z-index: -12;
+}
+
+.nav-container {
+  position: fixed;
+  width: 100%;
+  height: 57px;
+  background: #222222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  z-index: 1030;
+}
+
+.title {
+  color: #FEC503;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 20px;
+}
+
+.btn {
+  color: white;
+  background: #FEC503;
+  padding: 12px 12px;
+  border-radius: 5px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+img {
+  width: 10px;
+}
+
+.slide {
+  position: absolute;
+  top: 50px;
+  height: 0px;
+  width: 100%;
+  background: #222222;
+  transition: .7s;
+}
+
+.open {
+  height: 200px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 0 5px 10px;
+}
+
+.links-container {
+  color: white;
+  width: 450px;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.hide {
+  display: none;
+}
+
+.header {
+  padding-top: 150px;
+  padding-bottom: 100px;
+  width: 100%;
+}
+
+.welcome {
+  font-family: 'Droid Serif', serif;
+  font-style: italic;
+  font-size: 22px;
+  text-align: center;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.heading {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+  line-height: 50px;
+  margin-bottom: 25px;
+}
+
+.btn_more {
+  text-align: center;
+  background: #FEC503;
+  color: white;
+  padding: 21px 0;
+  width: 220px;
+  margin: auto;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.middle-container {
+  width: 100%;
+  height: 200vh;
+}
+
+@media (min-width: 992px) {
+  .btn {
+    display: none;
+  }
+  .links-container {
+    display: flex;
+  }
+  .nav-container {
+    background: none;
+    padding: 50px 100px 0 72px;
+  }
+  .title {
+    font-size: 28px;
+  }
+  .App {
+    height: 100vh;
+  }
+  .welcome {
+    font-size: 40px;
+    top: 190px;
+  }
+  .heading {
+    font-size: 75px;
+    top: 225px;
+  }
+  .btn_more {
+    font-size: 18px;
+    top: 285px;
+  }
+}
